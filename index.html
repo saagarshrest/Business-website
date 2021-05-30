@@ -16,8 +16,8 @@
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.png"></a>
-            <div class="nav-links">
-                <i class="fa fa-times"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Product</a></li>
@@ -27,7 +27,7 @@
                     <li><a href="">Contact us</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
         <div class="text-box">
             <h1>Leading Business Organization</h1>
@@ -38,6 +38,173 @@
 
 
     </section>
+
+    <!-------------Our Projects---------------->
+
+    <section class="projects">
+
+        <h1>Our Projects</h1>
+        <p> Some of the projects we work on.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rerum asperiores quos qui, aut cum mollitia debitis itaque eius commodi dignissimos corrupti. Nostrum tenetur voluptatum blanditiis accusamus obcaecati nobis quaerat?</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rerum asperiores quos qui, aut cum mollitia debitis itaque eius commodi dignissimos corrupti. Nostrum tenetur voluptatum blanditiis accusamus obcaecati nobis quaerat?</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rerum asperiores quos qui, aut cum mollitia debitis itaque eius commodi dignissimos corrupti. Nostrum tenetur voluptatum blanditiis accusamus obcaecati nobis quaerat?</p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!--------Our branch-------->
+    <section class="branch">
+
+        <h1>Our Branches</h1>
+        <p> Some of the projects we work on.</p>
+
+        <div class="row">
+
+            <div class="branch-col">
+                <img src="images/paris.jpg">
+                <div class="layer">
+                    <h3>Paris</h3>
+                </div>
+            </div>
+
+            <div class="branch-col">
+                <img src="images/london.jpg">
+                <div class="layer">
+                    <h3>London</h3>
+                </div>
+            </div>
+
+            <div class="branch-col">
+                <img src="images/new york.jpg">
+                <div class="layer">
+                    <h3>New York</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--------Our Plan-------->
+
+    <section class="plan">
+
+        <h1>Our Plan</h1>
+        <p> Some of the projects we work on.</p>
+
+        <div class="row">
+            <div class="plan-col">
+                <img src="images/industry1.jpg" alt="">
+                <h3>Industry One</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur impedit maiores quas nisi, natus mollitia, quia </p>
+            </div>
+
+            <div class="plan-col">
+                <img src="images/industry2.jpg" alt="">
+                <h3>Industry Two</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur impedit maiores quas nisi, natus mollitia, quia </p>
+            </div>
+
+            <div class="plan-col">
+                <img src="images/industry3.jpg" alt="">
+                <h3>Industry Three</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur impedit maiores quas nisi, natus mollitia, quia </p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!--------Testimonials-------->
+
+    <section class="testimonial">
+
+        <h1>Clients Testimonial</h1>
+        <p> Some of the projects we work on.</p>
+
+        <div>
+            <div class="row">
+                <div class="testimonial-col">
+                    <img src="images/portrait 1.jpg">
+                    <div>
+                        <h3>Bill Gates</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> impedit maiores quas nisi, natus mollitia, quia </p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="testimonial-col">
+                    <img src="images/portrait 2.jpg">
+                    <div>
+                        <h3>Melinda Gates</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> impedit maiores quas nisi, natus mollitia, quia </p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--------Subscribe-------->
+
+    <section class="cta">
+        <h1>Subscribe to our Newsletter</h1>
+        <a href="" class="hero-btn">Read more</a>
+    </section>
+
+
+
+    <!--------footer-------->
+
+    <section class="footer">
+        <div class="footer">Made with <i class="fa fa-heart"></i>. Business Website
+        </div>
+
+    </section>
+
+
+
+    <!-------------Javascript for Toggle Menu---------------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
 
 </body>
 
