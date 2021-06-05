@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My business website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://use.fontawesome.com/2e96aaafd1.js"></script>
+</head>
+
+<body>
+
+    <section class="aboutheader">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Product</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="contact us.html">Contact us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <h1>Our Contact</h1>
+
+    </section>
+
+
+
+    <!-------------Our team---------------->
+
+    <section class="location">
+
+        <h1>Our Location</h1>
+        <p> Some of the projects we work on.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.27689222607!2d85.2911133478311!3d27.709031933241047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600!5e0!3m2!1sen!2snp!4v1622630640902!5m2!1sen!2snp"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class=" fa fa-map-marker"></i>
+                    <span>
+                        <h3>xyz building</h3>
+                        <p>Kathmandu, Nepal</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h3>+977-9876543210</h3>
+                        <p>Sunday to Friday, 9:00 am to 6:00pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h3>business@xyz.com</h3>
+                        <p>Email us your questions</p>
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="cform">
+                <h1>Leave a Message.</h1>
+
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter your name">
+                    <input type="text" placeholder="Enter your phone number">
+                    <textarea rows="6" placeholder="Type your message"></textarea>
+                    <button type="submit" class="green-btn">Send Message</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--------footer-------->
+
+    <section class="footer ">
+        <div class="footer ">Made with <i class="fa fa-heart "></i>. Business Website
+        </div>
+
+    </section>
+
+    <!-------------Javascript for Toggle Menu---------------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks ")
+
+        function showmenu() {
+            navLinks.style.right = "0 ";
+        }
+
+        function hidemenu() {
+            navLinks.style.right = "-200px "
+        }
+    </script>
+
+</body>
+
+</html>

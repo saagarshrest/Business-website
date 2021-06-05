@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My business website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://use.fontawesome.com/2e96aaafd1.js"></script>
+</head>
+
+<body>
+
+    <section class="aboutheader">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Product</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="contact us.html">Contact us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <h1>Our Portfolio</h1>
+    </section>
+
+    <section class="portfolio">
+        <div class="row">
+            <div class="left-portfolio">
+                <img src="images/industry1.jpg">
+                <h1>Hydropower plant</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut tempora fugit facilis explicabo? Tempore cumque ipsam, explicabo accusantium corrupti fugiat dolorum! Nam unde aspernatur molestiae esse asperiores praesentium recusandae ex.</p>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut tempora fugit facilis explicabo? Tempore cumque ipsam, explicabo accusantium corrupti fugiat dolorum! Nam unde aspernatur molestiae esse asperiores praesentium recusandae ex.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cumque ipsa reiciendis modi, explicabo fugiat laboriosam velit quaerat. Modi excepturi corporis tenetur ipsam totam id quasi, magni accusantium quidem ducimus.</p>
+
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut tempora fugit facilis explicabo? Tempore cumque ipsam, explicabo accusantium corrupti fugiat dolorum! Nam unde aspernatur molestiae esse asperiores praesentium recusandae ex.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cumque ipsa reiciendis modi, explicabo fugiat laboriosam velit quaerat. Modi excepturi corporis tenetur ipsam totam id quasi, magni accusantium quidem ducimus.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut tempora fugit facilis explicabo? Tempore cumque ipsam, explicabo accusantium corrupti fugiat dolorum! Nam unde aspernatur molestiae esse asperiores praesentium recusandae
+                    ex. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cumque ipsa reiciendis modi, explicabo fugiat laboriosam velit quaerat. Modi excepturi corporis tenetur ipsam totam id quasi, magni accusantium quidem ducimus.</p>
+
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut tempora fugit facilis explicabo? Tempore cumque ipsam, explicabo accusantium corrupti fugiat dolorum! Nam unde aspernatur molestiae esse asperiores praesentium recusandae ex.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cumque ipsa reiciendis modi, explicabo fugiat laboriosam velit quaerat. Modi excepturi corporis tenetur ipsam totam id quasi, magni accusantium quidem ducimus.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment.</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter your name">
+                        <input type="text" placeholder="Enter your phone number">
+                        <textarea rows="6" placeholder="Type your message"></textarea>
+                        <button type="submit" class="green-btn">Send Message</button>
+                </div>
+
+
+            </div>
+
+
+            <div class="right-portfolio">
+                <h3>Areas Covered</h3>
+                <div>
+                    <span>Reserve Dam</span>
+                    <span>1km</span>
+                </div>
+                <div>
+                    <span>Reserve Dam</span>
+                    <span>1km</span>
+                </div>
+                <div>
+                    <span>Reserve Dam</span>
+                    <span>1km</span>
+                </div>
+                <div>
+                    <span>Reserve Dam</span>
+                    <span>1km</span>
+                </div>
+                <div>
+                    <span>Reserve Dam</span>
+                    <span>1km</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!--------footer-------->
+
+    <section class="footer">
+        <div class="footer">Made with <i class="fa fa-heart"></i>. Business Website
+        </div>
+
+    </section>
+
+    <!-------------Javascript for Toggle Menu---------------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+
+</body>
+
+</html>
